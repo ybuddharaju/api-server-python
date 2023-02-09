@@ -1,0 +1,58 @@
+Welcome! Please read this carefully...
+
+The "tests" folder contains subdirectories with different test
+suites. Each subdirectory is for a different video, and the
+programming exercises you'll do at that point.
+
+And each subdirectory contains a file named "test_todoserver.py".
+This test file contains unit tests you'll run while you are writing
+code, to grade your progress. The exercise description just below the
+video will tell you which directory and test file to run.
+
+For example, for the video "3. The First Endpoint", the exercise tells
+you to make the tests in "test_the_first_endpoint_1" pass. This means
+you run the tests in this file:
+
+  tests/test_the_first_endpoint_1/test_todoserver.py
+
+The Python command to do this is:
+
+  python3 -m unittest tests/test_the_first_endpoint_1/test_todoserver.py
+
+And similar for the other subdirectories. Each successive version of
+test_todoserver.py adds more tests. As you add to your Python
+application, you advance to the next test suite.
+
+So each video will tell you to run a set of unit tests. The only
+difference will be the subdirectory under "tests". Again, it will tell
+you which subdirectory to use.
+
+At first, your program's code will be in a Python file called
+"todoserver.py". That file should be in the current directory when you
+run tests.
+
+If it's not, then you will see an import error, stating
+that the test cannot find the "todoserver" module.
+
+Later, the videos will tell you to move the module into a directory
+called "lib".  When that happens, you will need to set the PYTHONPATH
+environment variable. The value of this variable should be the full
+path to the "lib" variable.
+
+If this value is wrong, or the variable is not set, you'll again see
+an import error, stating that the test cannot find the "todoserver"
+module.
+
+How do you set environment variables? This depends on your operating
+system. On MacOS, Linux, and Unix, you use the "export" command. For
+example, if your code is in /Users/yourname/mycode, then you would
+run:
+
+  export PYTHONPATH=/Users/yourname/mycode/lib
+
+Note this is the full path to the "lib" directory that contains the
+"todoserver" module.
+
+For Windows, please follow the instructions here:
+
+https://www.computerhope.com/issues/ch000549.htm
